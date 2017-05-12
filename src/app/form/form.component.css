@@ -1,0 +1,10 @@
+.form-component-grid {
+    display: flex;
+    margin-left: -10px;
+    margin-right: -10px;
+    align-items: center;
+}
+
+.form-component-grid-item {
+    padding: 0 10px;
+}

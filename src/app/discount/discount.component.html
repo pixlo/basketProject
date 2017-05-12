@@ -1,0 +1,14 @@
+<md-card>
+    <form (ngSubmit)="onSubmit();" #form="ngForm">
+        <div class="discount-grid">
+            <div class="discount-grid-item">
+                <md-input-container>
+                    <input mdInput type="number" name="discount" placeholder="Применить скидку" required [(ngModel)]="discount">
+                </md-input-container>
+            </div>
+            <div class="discount-grid-item">
+                <button type="submit" md-button color="primary" [disabled]="form.form.invalid">Применить</button>
+            </div>
+        </div>
+    </form>
+</md-card>

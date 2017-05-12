@@ -1,3 +1,7 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+    <app-form (addProduct)="addProduct($event)"></app-form>
+    <div class="space"></div>
+    <app-list [data]="data"></app-list>
+    <div class="space"></div>
+    <app-discount (makeDiscount)="updateDiscount($event)"></app-discount>
+</div>

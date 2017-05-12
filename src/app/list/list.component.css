@@ -1,0 +1,23 @@
+.list-component-table {
+    display: table;
+    width: 100%;
+}
+
+.list-component-table-row {
+    display: table-row;
+}
+.list-component-table-row:nth-child(2n + 1){
+    background-color: rgba(0, 0, 0, .12);
+}
+.list-component-table-row:first-child {
+    background-color: rgba(0, 0, 0, .20);
+    color: rgba(0, 0, 0, .38);
+}
+.list-component-table-row:first-child .list-component-table-col {
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+}
+
+.list-component-table-col {
+    display: table-cell;
+    padding: 10px;
+}

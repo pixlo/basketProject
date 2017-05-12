@@ -1,0 +1,22 @@
+<md-card class="form-component">
+    <div class="title">
+        Добавить продукт
+    </div>
+    <form (ngSubmit)="onSubmit(); form.reset();" #form="ngForm">
+        <div class="form-component-grid">
+            <div class="form-component-grid-item">
+                <md-input-container>
+                    <input required mdInput placeholder="Продукт" type="text" name="name" [(ngModel)]="name">
+                </md-input-container>
+            </div>
+            <div class="form-component-grid-item">
+                <md-input-container>
+                    <input required mdInput placeholder="Цена" type="number" name="price" [(ngModel)]="price">
+                </md-input-container>
+            </div>
+            <div class="form-component-grid-item">
+                <button md-raised-button color="primary" type="submit" [disabled]="form.form.invalid">Добавить</button>
+            </div>
+        </div>
+    </form>
+</md-card>

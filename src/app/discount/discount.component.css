@@ -1,0 +1,10 @@
+.discount-grid {
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.discount-grid-item {
+    padding: 0 10px;
+}

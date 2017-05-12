@@ -1,0 +1,14 @@
+<md-card>
+    <div class="list-component-table">
+        <div class="list-component-table-row">
+            <div class="list-component-table-col">Продукт</div>
+            <div class="list-component-table-col">Цена</div>
+            <div class="list-component-table-col">Цена со скидкой</div>
+        </div>
+        <div class="list-component-table-row" *ngFor="let item of data;">
+            <div class="list-component-table-col">{{item.name}}</div>
+            <div class="list-component-table-col">{{item.price}}</div>
+            <div class="list-component-table-col">{{item.discount}}</div>
+        </div>
+    </div>
+</md-card>
